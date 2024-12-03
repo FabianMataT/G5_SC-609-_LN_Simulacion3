@@ -14,10 +14,7 @@ include_once '../layout.php';
             <div class="container">
                 <div class="header-body text-center mb-7">
                     <div class="row justify-content-center">
-                        <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-                            <h1 class="text-white">Crear cuenta</h1>
-                            <p class="text-lead text-white">Regístrate para realizar tus compras en Ropa y 1/2</p>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -34,8 +31,9 @@ include_once '../layout.php';
                 <div class="col-lg-6 col-md-8">
                     <div class="card bg-secondary border-0">
                         <div class="card-header bg-transparent pb-5">
-                            <div class="text-muted text-center mt-2 mb-3">
-                                <h1 class="text-black">Regístrate</h1>
+                            <div class="text-muted text-center mt-5 mb-1">
+                                <h1 class="text-black">Crea una cuenta</h1>
+                                <p class="text-lead text-black">Regístrate para realizar tus prestamos de libros en la Biblioteca</p>
                             </div>
                         </div>
                         <div class="card-body px-lg-5 py-lg-5">
@@ -80,24 +78,11 @@ include_once '../layout.php';
                                         <input class="form-control" placeholder="Contraseña" type="password" name="contrasena" id="contrasena" required>
                                     </div>
                                 </div>
-                                <div class="row my-4">
-                                    <div class="col-12">
-                                        <div class="custom-control custom-control-alternative custom-checkbox">
-                                            <input class="custom-control-input" id="customCheckRegister" type="checkbox" required>
-                                            <label class="custom-control-label" for="customCheckRegister">
-                                                <span class="text-muted">Estoy de acuerdo con la <a href="#!">Política de Privacidad</a></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" id="saveBtn" class="btn btn-primary mt-4">Crear cuenta</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black">¿Ya tienes una cuenta?</p>
-                            <a href="../auth/registro.php" class="btn btn-primary mt-1 mb-6">Iniciar sesión</a>
+                                <div class="text-center d-flex justify-content-center flex-column">
+                                    <button type="submit" id="saveBtn" class="btn btn-primary mt-4 me-2">Crear cuenta</button>
+                                    <a href="../auth/login.php" class="btn btn-primary mt-4">Iniciar sesión</a>
+                                    <p class="mt-2" style="font-size: 0.8rem;">¿Ya tienes cuenta?</p>
+                                   </div>
                         </div>
                     </div>
                 </div>
@@ -118,7 +103,7 @@ include_once '../layout.php';
                 var formData = new FormData($('#registrarUsuario')[0]);
 
                 $.ajax({
-                    url: '/RopayMedia/app/Controller/AuthController/registroController.php?action=registrarUsuario',
+                    url: '/G5_SC-609-_LN_Simulacion3/app/Controller/AuthController/registroController.php?action=registrarUsuario',
                     type: 'POST',
                     data: formData,
                     contentType: false,

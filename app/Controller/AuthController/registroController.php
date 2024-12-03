@@ -1,5 +1,5 @@
 <?php
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/RopayMedia/app/Model/usuarioModel.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/G5_SC-609-_LN_Simulacion3/app/Model/usuarioModel.php";
 
     class registroController
     {
@@ -11,7 +11,7 @@
                 $telefono = $_POST['telefono'];
                 $correo = $_POST['correo'];
                 $contrasena = $_POST['contrasena'];
-                $rol = 2;  
+                $rol = 1;  
 
                 $usuario = new usuarioModel();
                 $resultado = $usuario->validarCorreo($correo);
