@@ -15,6 +15,8 @@
                 <div class="header-body text-center mb-7">
                     <div class="row justify-content-center">
                         <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+                            <h1 class="text-white">Iniciar Sesión</h1>
+                            <p class="text-lead text-white">Iniciar sesión para realizar tus compras en Ropa y 1/2</p>
                         </div>
                     </div>
                 </div>
@@ -32,9 +34,8 @@
                 <div class="col-lg-6 col-md-8">
                     <div class="card bg-secondary border-0">
                         <div class="card-header bg-transparent pb-5">
-                            <div class="text-muted text-center mt-5 mb-1">
+                            <div class="text-muted text-center mt-2 mb-3">
                                 <h1 class="text-black">Iniciar Sesión</h1>
-                                <p class="text-lead text-black">Inicia sesión para realizar tus prestamos de libros en la Biblioteca</p>
                             </div>
                         </div>
                         <div class="card-body px-lg-5 py-lg-5">
@@ -55,15 +56,16 @@
                                         <input class="form-control" placeholder="Contraseña" type="password" name="contrasena" id="contrasena" required>
                                     </div>
                                 </div>
-                                <div class="text-center d-flex justify-content-center flex-column">
-                                    <button type="submit" value="Login" name="btnIniciarSesion" class="btn btn-primary mt-4 me-2">Ingresar</button>
-                                    <a href="../auth/registro.php" class="btn btn-primary mt-4">Registrarme</a>
-                                    <p class="mt-2" style="font-size: 0.8rem;">¿No tienes una cuenta aún?</p>
+                                <div class="text-center">
+                                    <button type="submit" value="Login" name="btnIniciarSesion" class="btn btn-primary mt-4">Ingresar</button>
                                 </div>
                             </form>
                         </div>
                         
-                       
+                        <div class="text-center">
+                            <p class="text-black">¿No tienes una cuenta aún?</p>
+                            <a href="../auth/registro.php" class="btn btn-primary mt-1 mb-6">Resgitrarme</a>
+                        </div>
                     </div>
                 </div>
             </div>
