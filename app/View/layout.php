@@ -86,7 +86,7 @@ function MostrarNav()
                             </h6>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../categorias/categoriasCrud.php">
+                                    <a class="nav-link" href="../prestamos/prestamo.php">
                                         <i class="ni ni-bullet-list-67 text-primary"></i>
                                         <span class="nav-link-text">Lista de prestamos</span>
                                     </a>
