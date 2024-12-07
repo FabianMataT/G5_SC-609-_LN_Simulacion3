@@ -1,7 +1,7 @@
 <?php
 include_once '../layout.php';
-include_once '../../Model/prestamoModel.php';
-include_once '../../Controller/PrestamoController/prestamoController.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . "/G5_SC-609-_LN_Simulacion3/app/Model/prestamoModel.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/G5_SC-609-_LN_Simulacion3/app/Controller/PrestamoController/prestamoController.php";
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }

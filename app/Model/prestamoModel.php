@@ -1,5 +1,5 @@
 <?php
-      require_once $_SERVER['DOCUMENT_ROOT'] . "/G5_SC-609-_LN_Simulacion3/vendor/autoload.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/G5_SC-609-_LN_Simulacion3/vendor/autoload.php";
     require_once $_SERVER['DOCUMENT_ROOT'] . "/G5_SC-609-_LN_Simulacion3/app/Model/baseDatosModel.php";
 
     class prestamoModel {
